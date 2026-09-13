@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorin - Seed Data</title>
+</head>
+<body>
+  <div id="motorin-listings" data-key="motorin-listings">
+    <!-- Seed data for motorin automotive marketplace -->
+    <!-- This will be replaced with real API data in Phase C -->
+  </div>
+
+  <script>
+    // Seed data for motorin automotive marketplace
+    // This will be replaced with real API data in Phase C
+    const seedData = [
+      {
+        id: 1,
+        title: "2020 Tesla Model 3",
+        price: "$38,990",
+        mileage: "15,600",
+        year: 2020,
+        photoUrl: "https://images.unsplash.com/photo-1605665010553-1f0a6e80dbf0?w=400&h=225&fit=crop",
+        isFavorite: false,
+        createdAt: "2024-01-15T10:30:00Z"
+      },
+      {
+        id: 2,
+        title: "2019 BMW X3",
+        price: "$45,500",
+        mileage: "23,800",
+        year: 2019,
+        photoUrl: "https://images.unsplash.com/photo-1600298941427-98d11e4e9c6f?w=400&h=225&fit=crop",
+        isFavorite: false,
+        createdAt: "2024-01-10T14:20:00Z"
+      },
+      {
+        id: 3,
+        title: "2021 Ferrari F8 Tributo",
+        price: "$285,000",
+        mileage: "8,200",
+        year: 2021,
+        photoUrl: "https://images.unsplash.com/photo-1552519507-da3b14507c40?w=400&h=225&fit=crop",
+        isFavorite: false,
+        createdAt: "2024-01-20T08:45:00Z"
+      }
+    ];
+
+    // Initialize localStorage with seed data if not already present
+    const key = "motorin-listings";
+    if (!localStorage.getItem(localStorage.getItem(localStorage.getItem("motorin-listings") || key))) {
+      localStorage.setItem(key, JSON.stringify(seedData));
+    }
+</script>
+</body>

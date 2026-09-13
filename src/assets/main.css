@@ -1,0 +1,12 @@
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --bs-primary: #1A2E4C;
+  --bs-primary-rgb: 26, 46, 76;
+  --bs-secondary: #6c757d;
+  --bs-success: #1F883D;
+  --bs-warning: #B98900;
+  --bs-danger: #DC3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #343a40;
+}
