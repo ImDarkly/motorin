@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Mileage Tracker — Fill In</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+    <div id="app">
+        <h2>Mileage Tracker</h2>
+        <p>Trip miles: {{ miles }}</p>
+        <button @click="incrementMiles /* TODO: increment miles by 10 */">+10 mi</button>
+        <button @click="resetMiles /* TODO: reset miles to 0 */">Reset</button>
+        <p>Doubled: {{ doubled /* TODO: computed property name */ }}</p>
+    </div>
+
+    <script>
+        const { createApp, ref, computed } = Vue;
+        createApp({
+        setup() {
+            const miles = ref(0) /* TODO: create a ref starting at 0 */
+            const doubled = computed(() => miles.value * 2) /* TODO: computed that returns miles * 2 */
+
+            function incrementMiles() { miles.value += 10 /* TODO: add 10 to miles.value */ }
+            function resetMiles() { miles.value = 0 /* TODO: set miles.value to 0 */ }
+
+            return { miles, doubled, incrementMiles, resetMiles };
+        }
+        }).mount('#app');
+    </script>
+    </body>
+    </html>

@@ -22,7 +22,7 @@ straight to cold-build on `(1x)`.
 
 ## 2. Vue 3 core (the job's main requirement)
 - [~] Reactivity system (1x) — why `ref()` needs `.value`, what a Proxy does that
-      `Object.defineProperty` (Vue 2) couldn't
+      `Object.defineProperty` (Vue 2) couldn't — taught 9/13, step 1-4 in progress
 - [ ] Composition API vs Options API — why Composition API exists (logic reuse
       across components without mixins' naming collisions)
 - [ ] `computed` vs `watch` vs `watchEffect` — caching behavior, when each is

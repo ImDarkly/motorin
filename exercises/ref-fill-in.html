@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Price Tracker — Fill In</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h2>Price Tracker</h2>
+    <p>Current price: ${{ price }}</p>
+    <button @click="price += 5 /* TODO: increase price by 5 */">+$5</button>
+    <button @click="price *= 0.9 /* TODO: apply 10% discount (price * 0.9) */">Discount 10%</button>
+    <p>With tax (10%): ${{ /* TODO: computed property name */ }}</p>
+  </div>
+
+  <script>
+    const { createApp, ref, computed } = Vue;
+    createApp({
+      setup() {
+        const price = ref(100) /* TODO: create a ref starting at 100 */
+        const withTax = computed((price) => price *1.1) /* TODO: computed that returns price * 1.1 */
+        return { price, withTax };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
