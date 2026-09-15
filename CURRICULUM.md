@@ -23,14 +23,13 @@ straight to cold-build on `(1x)`.
 ## 2. Vue 3 core (the job's main requirement)
 - [~] Reactivity system (1x) — why `ref()` needs `.value`, what a Proxy does that
       `Object.defineProperty` (Vue 2) couldn't — taught 9/13, step 1-4 in progress
+- [~] `v-model` (1x) — desugars to `:model-value` + `@update:model-value`, why it matters for custom form components — taught 9/13
 - [ ] Composition API vs Options API — why Composition API exists (logic reuse
       across components without mixins' naming collisions)
 - [ ] `computed` vs `watch` vs `watchEffect` — caching behavior, when each is
       the wrong tool
 - [ ] Component lifecycle (`onMounted`, `onUpdated`, `onUnmounted`) — why API
       calls belong in `onMounted`, not top-level `setup()`
-- [ ] `v-model` — what it desugars to (`:model-value` + `@update:model-value`),
-      why that matters for building your own form components
 - [ ] `v-for` + `:key` — why Vue's diffing algorithm needs a stable key, what
       breaks without one (state leaking between reordered items)
 - [ ] Props vs emits vs `provide`/`inject` — when prop-drilling becomes a

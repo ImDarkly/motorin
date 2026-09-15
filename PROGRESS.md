@@ -2,7 +2,7 @@
 
 ## Phase A — Vue Fundamentals (days 1-3)
 - [~] **ref() counter** — can explain why `.value` is needed, Proxy mechanism, and how it differs from React `useState` (1x) — taught 9/13
-- [ ] **v-model form** — can desugar to `:model-value` + `@update:model-value`, why it matters for custom components
+- [~] **v-model form** — can desugar to `:model-value` + `@update:model-value`, why it matters for custom components (1x) — taught 9/13
 - [ ] **v-for + :key** — why stable keys prevent state leaking, what breaks without one
 - [ ] **computed formatter** — caching behavior vs watch, when each is the wrong tool
 - [ ] **watch side effect** — async timing, immediate vs deferred, watchEffect vs watch
